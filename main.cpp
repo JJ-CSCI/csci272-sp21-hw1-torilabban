@@ -5,7 +5,7 @@
 #include "binomial.h"
 //------------------------------
 //main.cpp is the source code file (ch 9.5)
-
+//Victoria Labban
 
 
 //------------------------------
