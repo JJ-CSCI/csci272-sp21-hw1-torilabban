@@ -1,5 +1,6 @@
 #include "binomial.h"
 #include <iostream>
+//attach to header
 
 using namespace std;
 
@@ -42,20 +43,7 @@ double Binomial::GetCoefficient(double index){
     }
 }
 
-// 2 indexes 
-
-        
-int Binomial::Add(const Binomial B){
-  if (powa1==B.powa1 && powa2==B.powa1){// must have same power to 
-    coeffe1= coeffe1+ B.coeffe1;
-    coeffe2= coeffe2 +B.coeffe2;
-    return 0;
-  }
-  else
-  {
-    return -1;
-  }
-}
+// 2 index 
 
 int Binomial::SetPower(int index , int expovalue ){
   if (index ==1){
@@ -77,6 +65,18 @@ int Binomial::SetPower(int index , int expovalue ){
       } 
   else{
     return -1; // otherwise the method returns -1
+  }
+}
+
+int Binomial::Add(const Binomial B){
+  if (powa1==B.powa1 && powa2==B.powa1){// must have same power to 
+    coeffe1= coeffe1+ B.coeffe1;
+    coeffe2= coeffe2 +B.coeffe2;
+    return 0;
+  }
+  else
+  {
+    return -1;
   }
 }
 
